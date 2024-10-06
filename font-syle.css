@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1,h2,h3 {
+    font-family: "Protest Strike", sans-serif;
+}
+
+p, ul{
+    font-family: "Reenie Beanie", cursive;
+    font-size: larger;
+}
+
+h4,a {
+    font-family: "Nunito", sans-serif;
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisaPro Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Protest+Strike&family=Reenie+Beanie&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="font-syle.css">
+</head>
+
+<body class="font-sans bg-gray-50">
+    <header class="bg-yellow-500 p-4 sticky top-0 z-50" x-data="{ isOpen: false }">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">VisaPro Agency</h1>
+            <nav class="hidden md:flex">
+                <a href="#" class="text-white px-4 hover:text-blue-200 transition">Home</a>
+                <a href="#services" class="text-white px-4 hover:text-blue-200 transition">Services</a>
+                <a href="#pricing" class="text-white px-4 hover:text-blue-200 transition">Pricing</a>
+                <a href="#destinations" class="text-white px-4 hover:text-blue-200 transition">Destinations</a>
+                <a href="#vlog" class="text-white px-4 hover:text-blue-200 transition">Vlog</a>
+                <a href="#testimonials" class="text-white px-4 hover:text-blue-200 transition">Testimonials</a>
+                <a href="#contact" class="text-white px-4 hover:text-blue-200 transition">Contact</a>
+            </nav>
+            <button @click="isOpen = !isOpen" class="md:hidden text-white">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="md:hidden" x-show="isOpen" @click.away="isOpen = false">
+            <a href="#" class="block text-white py-2 px-4 hover:bg-blue-700">Home</a>
+            <a href="#services" class="block text-white py-2 px-4 hover:bg-blue-700">Services</a>
+            <a href="#pricing" class="block text-white py-2 px-4 hover:bg-blue-700">Pricing</a>
+            <a href="#destinations" class="block text-white py-2 px-4 hover:bg-blue-700">Destinations</a>
+            <a href="#vlog" class="block text-white py-2 px-4 hover:bg-blue-700">Vlog</a>
+            <a href="#testimonials" class="block text-white py-2 px-4 hover:bg-blue-700">Testimonials</a>
+            <a href="#contact" class="block text-white py-2 px-4 hover:bg-blue-700">Contact</a>
+        </div>
+    </header>
+    <section class="bg-blue-100 py-20 text-center relative overflow-hidden">
+        <div class="container mx-auto relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold text-slate-100 mb-4">Get Your Visa Approved Quickly</h2>
+            <p class="text-lg md:text-xl text-slate-700 mt-4 mb-8">We help you with visa applications for all countries.
+            </p>
+            <a href="#services"
+                class="mt-8 inline-block bg-blue-600 text-white py-3 px-8 rounded-full hover:bg-blue-700 transition transform hover:scale-105">Explore
+                Services</a>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img src="img/header-img.jpg" alt="Background"
+                class="w-full h-full object-cover opacity-50">
+        </div>
+    </section>
+
+    <section id="services" class=" bg-slate-200 py-16">
+        <div class="container mx-auto">
+            <h3 class=" text-3xl font-bold text-center text-slate-700 mb-10">Our Services</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 shadow-sm rounded-lg text-center hover:shadow-lg transition">
+                    <i class="fas fa-plane-departure text-4xl text-amber-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2 text-amber-500">Tourist Visa</h4>
+                    <p class="text-gray-600">Apply for tourist visas to your favorite destinations. Easy and quick
+                        approval.</p>
+                </div>
+                <div class="bg-slate-50 p-6 shadow-sm rounded-lg text-center hover:shadow-lg transition">
+                    <i class="fas fa-graduation-cap text-4xl text-amber-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2 text-amber-500">Student Visa</h4>
+                    <p class="text-gray-600">Get your student visa for study abroad with expert guidance and support.
+                    </p>
+                </div>
+                <div class="bg-slate-50 p-6 shadow-sm rounded-lg text-center hover:shadow-lg transition">
+                    <i class="fas fa-briefcase text-4xl text-amber-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2 text-amber-500">Work Visa</h4>
+                    <p class="text-gray-600">We assist with work visa applications for different countries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="py-16 bg-slate-200">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold text-center text-slate-700 mb-10">Our Pricing</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 shadow-sm rounded-lg text-center hover:shadow-xl transition">
+                    <h4 class="text-2xl font-bold mb-4 text-amber-500">Basic Plan</h4>
+                    <p class="text-4xl font-bold mb-4 text-gray-700">$99</p>
+                    <ul class="text-gray-600 mb-8">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Tourist Visa Assistance</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Email Support</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>5 Days Processing Time</li>
+                    </ul>
+                    <a href="#contact"
+                        class="bg-yellow-400 text-white py-3 px-8 rounded-full hover:bg-yellow-600 transition transform hover:scale-105 inline-block">Choose
+                        Plan</a>
+                </div>
+                <div
+                    class="bg-white p-8 shadow-sm rounded-lg text-center border-2 border-blue-600 hover:shadow-xl transition transform scale-105">
+                    <h4 class="text-2xl font-bold mb-4 text-slate-700">Premium Plan</h4>
+                    <p class="text-4xl font-bold mb-4 text-gray-700">$199</p>
+                    <ul class="text-gray-600 mb-8">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Tourist & Student Visa
+                            Assistance</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Priority Email & Phone Support
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>3 Days Processing Time</li>
+                    </ul>
+                    <a href="#contact"
+                        class="bg-slate-500 text-white py-3 px-8 rounded-full hover:bg-slate-600 transition transform hover:scale-105 inline-block">Choose
+                        Plan</a>
+                </div>
+                <div class="bg-white p-8 shadow-sm rounded-lg text-center hover:shadow-xl transition">
+                    <h4 class="text-2xl font-bold mb-4 text-amber-500"">Business Plan</h4>
+                    <p class="text-4xl font-bold mb-4 text-gray-700">$299</p>
+                    <ul class="text-gray-600 mb-8">
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Tourist, Student, & Work Visa
+                            Assistance</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>24/7 Support</li>
+                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>1 Day Priority Processing</li>
+                    </ul>
+                    <a href="#contact"
+                        class="bg-yellow-400 text-white py-3 px-8 rounded-full hover:bg-yellow-600 transition transform hover:scale-105 inline-block">Choose
+                        Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+                                    <section id="destinations" class="py-16">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold text-center text-slate-700 mb-10">Popular Destinations</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-6 shadow-sm rounded-lg text-center hover:shadow-xl transition overflow-hidden group">
+                    <img src="https://lp-cms-production.imgix.net/2023-10/GettyImages-621242410.jpg" alt="Canada"
+                        class="w-full h-48 object-cover rounded-t-lg group-hover:scale-110 transition duration-300">
+                    <h4 class="text-xl font-semibold my-4 text-amber-500">Canada</h4>
+                    <p class="text-gray-600">Explore the beautiful landscapes and cities of <b>Canada</b>. Tourist and student
+                        visas available.</p>
+                </div>
+                <div
+                    class="bg-white p-6 shadow-sm rounded-lg text-center hover:shadow-xl transition overflow-hidden group">
+                    <img src="https://cdn.revolutionise.com.au/cups/aa/files/q6ka2jimlmtoisez.jpg" alt="Australia"
+                        class="w-full h-48 object-cover rounded-t-lg group-hover:scale-110 transition duration-300">
+                    <h4 class="text-xl font-semibold my-4 text-amber-500"">Australia</h4>
+                    <p class="text-gray-600">Adventure awaits in <b>Australia!</b> Work and student visa applications are open.
+                    </p>
+                </div>
+                <div
+                    class="bg-white p-6 shadow-sm rounded-lg text-center hover:shadow-xl transition overflow-hidden group">
+                    <img src="https://internationalbanker.com/wp-content/uploads/2023/11/Bangladesh.png" 
+                        class="w-full h-48 object-cover rounded-t-lg group-hover:scale-110 transition duration-300">
+                    <h4 class="text-xl font-semibold my-4 text-amber-500"">Bangladesh</h4>
+                    <p class="text-gray-600">Visit the <b>Bangladesh</b>  for work, study, or vacation with our expert visa
+                        services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8 text-slate-700">Recent Blogs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1719560112841-d1a9f61695f8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Blog Post Title 1</h3>
+                        <p class="text-gray-600 mb-4">A short description of the blog post goes here. Just a teaser to make
+                            them want to read more!</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">Read More</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1668449090967-cab78188792c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Blog Post Title 2</h3>
+                        <p class="text-gray-600 mb-4">A short description of the blog post goes here. Just a teaser to make
+                            them want to read more!</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">Read More</a>
+                    </div>
+                </div>
+
+                <div class="bg-white  rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544630701-b4b6ce9a2b6d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-700 mb-2">Blog Post Title 3</h3>
+                        <p class="text-gray-600 mb-4">A short description of the blog post goes here. Just a teaser to make
+                            them want to read more!</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-slate-700 sm:text-4xl">Our Happy Clients 💖</h2>
+            <p class="mt-4 text-lg text-gray-600">Hear what they say about us!</p>
+        </div>
+
+        <div class="mt-10 grid gap-8 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2">
+            <div
+                class="bg-white p-6 rounded-lg  transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+                <div class="flex items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full object-cover"
+                        src="https://randomuser.me/api/portraits/women/79.jpg" alt="client">
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900">Sarah Williams</h3>
+                        <p class="text-sm text-gray-500">CEO, Fashionista Inc.</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">"This service has been a game-changer! Highly recommend it to anyone
+                    looking for amazing quality and support!"</p>
+            </div>
+            <div
+                class="bg-white p-6 rounded-lg  transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+                <div class="flex items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full object-cover"
+                        src="https://randomuser.me/api/portraits/men/32.jpg" alt="client">
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900">John Doe</h3>
+                        <p class="text-sm text-gray-500">Founder, Techie.io</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">"Amazing! I love the attention to detail and customer service. Will
+                    definitely be coming back!"</p>
+            </div>
+
+            <div
+                class="bg-white p-6 rounded-lg  transition-transform transform hover:scale-105 hover:shadow-2xl duration-300">
+                <div class="flex items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full object-cover"
+                        src="https://randomuser.me/api/portraits/men/85.jpg" alt="client">
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900">Alex Green</h3>
+                        <p class="text-sm text-gray-500">Marketing Guru, Green Media</p>
+                    </div>
+                </div>
+                <p class="mt-4 text-gray-600">"They always exceed expectations. I feel like part of the family!"</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-slate-700 sm:text-4xl">Our Stunning Gallery</h2>
+            <p class="mt-4 text-lg text-gray-600">Explore the beauty and creativity</p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+            <div class="relative group">
+                <img src="https://plus.unsplash.com/premium_photo-1664910200216-cdb7987cea6f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="nature"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-lg font-bold">Nature Beauty</span>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <img src="https://media.flytographer.com/uploads/2023/07/Travel-destinations-architect-lovers-flytographer-31.jpeg" alt="architecture"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-lg font-bold">Modern Architecture</span>
+                </div>
+            </div>
+            <div class="relative group">
+                <img src="https://blog.airmiles.ca/wp-content/uploads/elementor/thumbs/top-foodie-destinations-feature-image-q71az8hc9i4t1oky252vudcqt3wadm4fllhguyru4g.jpeg" alt="food"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-lg font-bold">Delicious Food 🍕</span>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <img src="https://www.travelandleisure.com/thmb/MriQxOVvVJ1MLNgWUXbGl8L2rGk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-Backpacker-BUDGET0323-eeaf531276694f93966baa8fbcd2730d.jpg" alt="travel"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-lg font-bold">Amazing Destinations 🌍</span>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <img src="https://www.thebellevoyage.com/wp-content/uploads/2023/06/AdobeStock_109650806-scaled.jpeg" alt="fashion"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-lg font-bold">Fashion Vibes 👗</span>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <img src="https://academiaindica.com/wp-content/uploads/2023/06/pexels-bradley-hook-123318-scaled.jpg" alt="technology"
+                    class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-lg font-bold">Tech Wonders 💻</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-200">
+        <div
+            class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
+
+            <div class="text-center lg:text-left">
+                <h2 class="text-2xl font-bold mb-4">Find Us Here 📍</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509489!2d144.9537363153175!3d-37.81627937975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577a560f65a4989!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1632991970194!5m2!1sen!2sau"
+                    width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+            <div class="text-center lg:text-left">
+                <h2 class="text-2xl font-bold mb-4">About Us </h2>
+                <p class="text-gray-400 mb-4">We are a passionate team bringing you the best service possible. Visit us
+                    or connect with us online. We love to chat and make new friends! </p>
+                <p class="text-gray-400">Address: 123 Lovely Lane, Happy Town </p>
+                <p class="text-gray-400">Phone: +123 456 7890</p>
+                <p class="text-gray-400">Email: hello@company.com</p>
+            </div>
+
+            <div class="text-center lg:text-right">
+                <h2 class="text-2xl font-bold mb-4">Connect With Us 💬</h2>
+                <div class="flex justify-center lg:justify-end space-x-6">
+                    <!-- Social icons go here (same as before) -->
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 py-4 mt-8">
+            <p class="text-center text-gray-400 text-sm">&copy; 2024 arnob. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
